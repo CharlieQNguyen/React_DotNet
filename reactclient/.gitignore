@@ -22,3 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 **/node_modules
+/bin 
+/obj 
+bin/ 	# ignore bin directory 
+*.obj 	# ignore any files with .obj postfix
