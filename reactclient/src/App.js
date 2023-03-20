@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Constants from "./utilities/Constants";
 import PostCreateForm from "./components/PostCreateForm";
 import PostUpdateForm from "./components/PostUpdateForm";
+import GenerateCSVButton from "./components/GenerateCSVButton";
+
 function App() {
   const [posts, setPosts] = useState([]);
   const [showingCreateNewPostForm, setShowingCreateNewPostForm] = useState(
@@ -48,22 +50,49 @@ function App() {
     <div className="container">
       <div className="row min-vh-100">
         <div className="col d-flex flex-column justify-content-center align-items-center">
-          {showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null && (
+          {showingCreateNewPostForm === false &&
+            postCurrentlyBeingUpdated === null && (
               <div>
-                <h1>ASP.Net Core React</h1>
+                <h1>Hi My Name is Charlie</h1>
                 <div className="mt-5">
-                  <button onClick={getPosts}className="btn btn-dark btn-lg w-100">{" "}Get Posts from server</button>
-                  <button onClick={() => setShowingCreateNewPostForm(true)}className="btn btn-secondary btn-lg w-100 mt-4">Create New Post</button>
+                  <button
+                    onClick={getPosts}
+                    className="btn btn-dark btn-lg w-100"
+                  >
+                    {" "}
+                    Get Posts from server
+                  </button>
+                  <button
+                    onClick={() => setShowingCreateNewPostForm(true)}
+                    className="btn btn-secondary btn-lg w-100 mt-4"
+                  >
+                    Create New Post
+                  </button>
                 </div>
               </div>
             )}
 
-          {posts.length > 0 && showingCreateNewPostForm === false && postCurrentlyBeingUpdated === null && renderPostsTable()}
+          {posts.length > 0 &&
+            showingCreateNewPostForm === false &&
+            postCurrentlyBeingUpdated === null &&
+            renderPostsTable()}
 
-          {showingCreateNewPostForm && (<PostCreateForm onPostCreated={onPostCreated} />
+          {posts.length > 0 &&
+            showingCreateNewPostForm === false &&
+            postCurrentlyBeingUpdated === null && <GenerateCSVButton />}
+
+          {showingCreateNewPostForm && (
+            <PostCreateForm
+              post={{ title: "", content: "" }}
+              onPostCreated={onPostCreated}
+            />
           )}
 
-          {postCurrentlyBeingUpdated !== null && (<PostUpdateForm post={postCurrentlyBeingUpdated} onPostUpdated={onPostUpdated}/>
+          {postCurrentlyBeingUpdated !== null && (
+            <PostUpdateForm
+              post={postCurrentlyBeingUpdated}
+              onPostUpdated={onPostUpdated}
+            />
           )}
         </div>
       </div>
@@ -89,8 +118,25 @@ function App() {
                 <td>{post.title}</td>
                 <td>{post.content}</td>
                 <td>
-                  <button onClick={() => setPostCurrentlybeingUpdated(post)}className="btn btn-dark btn-lg mx-3 my-3">Update</button>
-                  <button onClick={() => { if(window.confirm(`Are you sure you want to delete thie post tiled "${post.title} "?"`)) deletePost(post.postId) }}className="btn btn-secondary btn-lg">Delete</button>
+                  <button
+                    onClick={() => setPostCurrentlybeingUpdated(post)}
+                    className="btn btn-dark btn-lg mx-3 my-3"
+                  >
+                    Update
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (
+                        window.confirm(
+                          `Are you sure you want to delete thie post tiled "${post.title} "?"`
+                        )
+                      )
+                        deletePost(post.postId);
+                    }}
+                    className="btn btn-secondary btn-lg"
+                  >
+                    Delete
+                  </button>
                 </td>
               </tr>
             ))}
@@ -147,7 +193,6 @@ function App() {
   }
 
   function onPostDeleted(deletedPostPostId) {
-
     let postsCopy = [...posts];
 
     const index = (postsCopy.findIndex = postsCopy.findIndex(
@@ -164,9 +209,10 @@ function App() {
 
     setPosts(postsCopy);
 
-    alert(`Post successfully deleted. After clicking OK, look at the table below to see  your post disappear.`);
+    alert(
+      `Post successfully deleted. After clicking OK, look at the table below to see  your post disappear.`
+    );
   }
-
 }
 
 export default App;

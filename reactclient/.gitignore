@@ -26,3 +26,6 @@ yarn-error.log*
 /obj 
 bin/ 	# ignore bin directory 
 *.obj 	# ignore any files with .obj postfix
+
+OBJ 
+bin 
