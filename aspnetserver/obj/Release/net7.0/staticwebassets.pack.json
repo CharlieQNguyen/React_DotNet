@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/asset-manifest.json",
+      "PackagePath": "staticwebassets/asset-manifest.json"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/logo192.png",
+      "PackagePath": "staticwebassets/logo192.png"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/logo512.png",
+      "PackagePath": "staticwebassets/logo512.png"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/manifest.json",
+      "PackagePath": "staticwebassets/manifest.json"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/precache-manifest.0d9badb1b54cce9078e8e2b9956a331a.js",
+      "PackagePath": "staticwebassets/precache-manifest.0d9badb1b54cce9078e8e2b9956a331a.js"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/robots.txt",
+      "PackagePath": "staticwebassets/robots.txt"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/service-worker.js",
+      "PackagePath": "staticwebassets/service-worker.js"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/css/1.dfd5938a.chunk.css",
+      "PackagePath": "staticwebassets/static/css/1.dfd5938a.chunk.css"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/css/1.dfd5938a.chunk.css.map",
+      "PackagePath": "staticwebassets/static/css/1.dfd5938a.chunk.css.map"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/1.f492f16f.chunk.js",
+      "PackagePath": "staticwebassets/static/js/1.f492f16f.chunk.js"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/1.f492f16f.chunk.js.map",
+      "PackagePath": "staticwebassets/static/js/1.f492f16f.chunk.js.map"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/main.d94e5dfd.chunk.js",
+      "PackagePath": "staticwebassets/static/js/main.d94e5dfd.chunk.js"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/main.d94e5dfd.chunk.js.map",
+      "PackagePath": "staticwebassets/static/js/main.d94e5dfd.chunk.js.map"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/runtime~main.229c360f.js",
+      "PackagePath": "staticwebassets/static/js/runtime~main.229c360f.js"
+    },
+    {
+      "Id": "/Users/DoWork/Desktop/React_DotNet/aspnetserver/wwwroot/static/js/runtime~main.229c360f.js.map",
+      "PackagePath": "staticwebassets/static/js/runtime~main.229c360f.js.map"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.aspnetserver.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.build.aspnetserver.props",
+      "PackagePath": "build\\aspnetserver.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildMultiTargeting.aspnetserver.props",
+      "PackagePath": "buildMultiTargeting\\aspnetserver.props"
+    },
+    {
+      "Id": "obj/Release/net7.0/staticwebassets/msbuild.buildTransitive.aspnetserver.props",
+      "PackagePath": "buildTransitive\\aspnetserver.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

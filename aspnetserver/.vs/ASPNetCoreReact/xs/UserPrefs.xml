@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{EB9DA3DF-084B-46CD-AE75-60E7A7E01742}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
+    <Files>
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="51" Column="2" />
+      <File FileName="README.md" Line="16" Column="62" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ASPNetCoreReact" expanded="True">
+            <Node name="aspnetserver" expanded="True">
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.aspnetserver PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>
